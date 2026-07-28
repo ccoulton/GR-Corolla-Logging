@@ -1,0 +1,42 @@
+board.NEOPIXEL (GPIO0) adc2_1 touch1 clk1 higt during boot low for programming
+(GPIO1) u0 txd clk3 used for flashing and debug
+board.NEOPIXEL_I2C_POWER (GPIO2) adc2_2 touch2 low for boot also connected to led
+(GPIO3) u0 rxd clk2 for flashing and debug
+board.A5 board.D4 (GPIO4) 
+board.D5 board.SCK (GPIO5) vspi_CS high during boot
+                (GPIO6) u1_cts spi_clk connected to flash
+board.D7 board.RX (GPIO7) u2_rts spi_miso connected to flash
+board.D8 board.TX (GPIO8) u2_cts spi_MOSI connected to flash
+                    (GPIO9) spi_hd u1rxd connected to flash
+                    (GPIO10) spi_wp u1tx connected to flash
+                    (GPIO11) spi_cs u1RTS connected to flash
+board.A11 board.D12 (GPIO12) HSPI_MISO touch5 adc2_5 low during boot
+board.A12 board.D13 board.L board.LED (GPIO13) HSPI_MOSI touch4 adc2_4
+board.A6 board.D14 (GPIO14) HSPI_CLK touch6 adc2_6
+board.A8 board.D15 (GPIO15) HSPI_CS touch3 adc2_3 high during boot prevents start up if low
+(GPIO16) u2rxd
+(GPIO17) U2txd
+(GPIO18) VSPI_CLK
+board.D19 board.MOSI (GPIO19) VSPI_MISO
+board.D20 board.SCL (GPIO20) 
+board.D21 board.MISO (GPIO21)
+board.D22 board.SDA (GPIO22)
+(GPIO23)
+(GPIO24)
+board.A1 board.D25 (GPIO25) dac1
+board.A0 board.D26 (GPIO26) dac2
+board.A10 board.D27 (GPIO27)
+(GPIO28)
+(GPIO29)
+(GPIO30)
+(GPIO31)
+board.A7 board.D32 (GPIO32) ADC1_4 touch9 xtal32
+board.A9 board.D33 (GPIO33) ADC1_5 touch8 xtal32
+board.A2 board.D34 (GPIO34) ADC1_6
+board.D35 board.VOLTAGE_MONITOR (GPIO35) adc1_7
+board.A4 board.D36 (GPIO36) sensvp adc1_0
+board.D37 (GPIO37) 
+board.BUTTON board.SW38 (GPIO38)
+board.A3 board.D39 (GPIO39) sensvn
+
+

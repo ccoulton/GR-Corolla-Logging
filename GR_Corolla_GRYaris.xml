@@ -1,0 +1,17 @@
+<?xml version="1.0"?>
+<RealDashCANProfile name="GR_Corolla_GRYaris" baudrate="500000">
+  <frame id="0x115" name="RPM_CLUTCH" length="8">
+    <value name="RPM" bitOffset="7" bitLength="16" endian="big" signed="false" scale="0.79" offset="0" channel="RPM"/>
+  </frame>
+  <frame id="0x116" name="THROTTLE" length="8">
+    <value name="Throttle" bitOffset="15" bitLength="8" endian="big" signed="false" scale="0.5" offset="0" channel="Throttle"/>
+  </frame>
+  <frame id="0x0D7" name="SPEED" length="8">
+    <value name="Speed" bitOffset="31" bitLength="16" endian="big" signed="false" scale="0.01" offset="0" channel="Speed"/>
+  </frame>
+  <frame id="0x024" name="G_FORCE" length="8">
+    <value name="LatG" bitOffset="33" bitLength="10" endian="big" signed="false" scale="0.03589" offset="-18" channel="LateralG"/>
+    <value name="LongG" bitOffset="17" bitLength="10" endian="big" signed="false" scale="0.03589" offset="-18" channel="LongitudinalG"/>
+    <value name="YawRate" bitOffset="1" bitLength="10" endian="big" signed="false" scale="0.244" offset="-125" channel="YawRate"/>
+  </frame>
+</RealDashCANProfile>
