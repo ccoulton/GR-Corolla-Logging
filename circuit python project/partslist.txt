@@ -1,0 +1,11 @@
+main board: huzzah32 v2 feather adafruit 3405       19.95
+can board: CAN bus wing mcp2515 spi adafruit 5709   12.50
+rtc+sd: datalogging featherwing adafruit 2922       8.95
+power: mpm3610 breakout         adafruit 4739       6.95                    
+6 pin connector: Metra 71-1761 87-94                16.23
+
+in consideration:
+gps feather                     adafruit 3133       24.95
+gps antenna                     adafruit 960        21.50
+sma adapter                     adafruit 851        3.95
+oled screen                     adafruit 4650       14.95
