@@ -1,0 +1,252 @@
+VERSION ""
+
+
+NS_ : 
+	NS_DESC_
+	CM_
+	BA_DEF_
+	BA_
+	VAL_
+	CAT_DEF_
+	CAT_
+	FILTER
+	BA_DEF_DEF_
+	EV_DATA_
+	ENVVAR_DATA_
+	SGTYPE_
+	SGTYPE_VAL_
+	BA_DEF_SGTYPE_
+	BA_SGTYPE_
+	SIG_TYPE_REF_
+	VAL_TABLE_
+	SIG_GROUP_
+	SIG_VALTYPE_
+	SIGTYPE_VALTYPE_
+	BO_TX_BU_
+	BA_DEF_REL_
+	BA_REL_
+	BA_DEF_DEF_REL_
+	BU_SG_REL_
+	BU_EV_REL_
+	BU_BO_REL_
+	SG_MUL_VAL_
+
+BS_:
+
+BU_: GRY
+
+
+BO_ 278 THROTTLE: 8 GRY
+ SG_ Thorttle_Pos_Cruise : 7|8@0+ (0.5,0) [0|1] "%" Vector__XXX
+ SG_ Thorttle_Pos_Driver : 15|8@0+ (0.5,0) [0|1] "%" Vector__XXX
+
+BO_ 252 BRAKE_SW: 8 GRY
+ SG_ Brake_Switch : 0|1@0+ (1,0) [0|1] "" Vector__XXX
+
+BO_ 257 BRAKES: 8 GRY
+ SG_ Brake_Switch : 3|1@0+ (1,0) [0|1] "" Vector__XXX
+ SG_ Brake_Pressure_1 : 2|11@0+ (0.1,0) [0|1] "bar" Vector__XXX
+ SG_ Brake_Pressure_2 : 18|11@0+ (0.1,0) [0|1] "bar" Vector__XXX
+
+BO_ 865 CRUISE: 8 GRY
+ SG_ Trottle_Pos : 23|8@0+ (0.5,0) [0|1] "%" Vector__XXX
+ SG_ Cruise_Enabled : 2|1@0+ (1,0) [0|1] "" Vector__XXX
+ SG_ Cancel_Button : 3|1@0+ (1,0) [0|1] "" Vector__XXX
+ SG_ Minus_Set_Button : 4|1@0+ (1,0) [0|1] "" Vector__XXX
+ SG_ Plus_Set_Button : 5|1@0+ (1,0) [0|1] "" Vector__XXX
+ SG_ Brake_Switch : 39|1@0+ (1,0) [0|1] "" Vector__XXX
+ SG_ Clutch_Switch : 38|1@0+ (1,0) [0|1] "" Vector__XXX
+ SG_ Accel_Net : 55|16@0+ (0.0002,-6) [0|1] "" Vector__XXX
+
+BO_ 277 RPM_CLUTCH: 8 GRY
+ SG_ Clutch_Pedal_Pos : 23|8@0+ (0.9,-44) [0|1] "%" Vector__XXX
+ SG_ RPM : 7|16@0+ (0.79,0) [0|1] "rpm" Vector__XXX
+ SG_ Inverted_Clutch_Pedal_Position : 31|8@0+ (1,0) [0|1] "" Vector__XXX
+
+BO_ 1310 AWD: 8 GRY
+ SG_ AWD_Mode : 3|4@0+ (1,0) [0|1] "" Vector__XXX
+
+BO_ 951 ESP_CONTROL: 8 GRY
+ SG_ Traction_Control : 13|1@0+ (1,0) [0|1] "" Vector__XXX
+ SG_ VSC_Control : 12|2@0+ (1,0) [0|1] "" Vector__XXX
+
+BO_ 37 STEERING_WHEEL: 8 GRY
+ SG_ Steering_Angle : 3|12@0- (1.5,0) [0|1] "deg" Vector__XXX
+ SG_ Steering_Rate : 35|12@0- (1,0) [-2000|2000] "deg/s" Vector__XXX
+ SG_ Steer_Fraction : 39|4@0+ (0.1,0) [0|1] "deg" Vector__XXX
+
+BO_ 1568 BODY_CONTROL: 8 GRY
+ SG_ Handbrake : 60|1@0+ (1,0) [0|1] "" Vector__XXX
+ SG_ Door_Left : 45|1@0+ (1,0) [0|1] "" Vector__XXX
+ SG_ Door_Right : 44|1@0+ (1,0) [0|1] "" Vector__XXX
+ SG_ Meter_Dimmed : 38|1@0+ (1,0) [0|1] "" Vector__XXX
+ SG_ Driver_Seat_Belt : 62|1@0+ (1,0) [0|1] "" Vector__XXX
+ SG_ Door_Rear : 41|1@0+ (1,0) [0|1] "" Vector__XXX
+ SG_ Checksum : 63|8@0+ (1,0) [0|1] "" Vector__XXX
+
+BO_ 170 WHEEL_SPEEDS: 8 GRY
+ SG_ Wheel_Speed_FR : 7|16@0+ (0.01,-67.67) [0|250] "km/h" Vector__XXX
+ SG_ Wheel_Speed_FL : 23|16@0+ (0.01,-67.67) [0|250] "km/h" Vector__XXX
+ SG_ Wheel_Speed_RR : 39|16@0+ (0.01,-67.67) [0|250] "km/h" Vector__XXX
+ SG_ Wheel_Speed_RR : 55|16@0+ (0.01,-67.67) [0|250] "km/h" Vector__XXX
+
+BO_ 966 WATER_TEMP: 8 GRY
+ SG_ Water_Temp : 7|9@0+ (0.5,-80) [0|1] "C" Vector__XXX
+
+BO_ 979 FUEL: 2 GRY
+ SG_ Fuel_Supply : 7|16@0+ (0.0005,0) [0|1] "ml" Vector__XXX
+
+BO_ 1408 VIN_PART_1: 8 GRY
+ SG_ VIN_1_8 : 7|64@0+ (1,0) [0|1] "" Vector__XXX
+
+BO_ 1409 VIN_PART_2: 8 GRY
+ SG_ VIN_9_16 : 7|64@0+ (1,0) [0|1] "" Vector__XXX
+
+BO_ 1410 VIN_PART_3: 8 GRY
+ SG_ VIN_17 : 7|8@0+ (1,0) [0|1] "" Vector__XXX
+
+BO_ 1553 ODOMETER: 8 GRY
+ SG_ Odometer : 39|32@0+ (1,0) [0|1] "" Vector__XXX
+ SG_ Units : 29|2@0+ (1,0) [0|1] "" Vector__XXX
+
+BO_ 1556 TURN_SIGNALS: 8 GRY
+ SG_ Turn_Signal : 29|2@0+ (1,0) [0|1] "" Vector__XXX
+ SG_ Hazard : 27|1@0+ (1,0) [0|1] "" Vector__XXX
+
+BO_ 1592 DOOR_LOCKS: 8 GRY
+ SG_ Locks : 16|1@0+ (1,0) [0|1] "" Vector__XXX
+
+BO_ 1570 LIGHTS: 8 GRY
+ SG_ Auto_High_Beam : 37|1@0+ (1,0) [0|1] "" Vector__XXX
+ SG_ Daylight_Running_Lights : 31|1@0+ (1,0) [0|1] "" Vector__XXX
+ SG_ Front_Fog_Lights : 27|1@0+ (1,0) [0|1] "" Vector__XXX
+ SG_ High_Beam : 30|1@0+ (1,0) [0|1] "" Vector__XXX
+ SG_ Low_Beam : 29|1@0+ (1,0) [0|1] "" Vector__XXX
+ SG_ Parking_Lights : 28|1@0+ (1,0) [0|1] "" Vector__XXX
+ SG_ Rear_Fog_Light : 26|1@0+ (1,0) [0|1] "" Vector__XXX
+
+BO_ 36 G_FORCE: 8 GRY
+ SG_ Lat_Accel : 33|10@0+ (0.03589,-18) [0|1] "m/s^2" Vector__XXX
+ SG_ Long_Accel : 17|10@0+ (0.03589,-18) [0|1] "m/s^2" Vector__XXX
+ SG_ Yaw_Rate : 1|10@0+ (0.244,-125) [0|1] "deg/s" Vector__XXX
+
+BO_ 944 AIR_CON: 8 GRY
+ SG_ Cabin_Temp : 15|8@0+ (0.25,-6.5) [0|1] "C" Vector__XXX
+ SG_ AC_Switch : 43|1@0+ (1,0) [0|1] "" Vector__XXX
+
+BO_ 1593 BONNET: 8 GRY
+ SG_ Bonnet : 17|1@0+ (1,0) [0|1] "" Vector__XXX
+
+BO_ 1762 TPMS: 8 GRY
+ SG_ Tire_Pr_FL : 29|6@0+ (0.063,0) [0|1] "bar" Vector__XXX
+ SG_ Tire_Pr_FR : 37|6@0+ (0.063,0) [0|1] "bar" Vector__XXX
+ SG_ Tire_Pr_RL : 45|6@0+ (0.063,0) [0|1] "bar" Vector__XXX
+ SG_ Tire_Pr_RR : 53|6@0+ (0.063,0) [0|1] "bar" Vector__XXX
+
+BO_ 1653 TIMER: 8 GRY
+ SG_ Timer_From_Start_Sec : 62|7@0+ (0.66,0) [0|1] "sec" Vector__XXX
+ SG_ Timer_From_Start_min : 54|7@0+ (1,0) [0|1] "min" Vector__XXX
+
+BO_ 215 SPEED: 8 GRY
+ SG_ Speed_2 : 15|16@0+ (0.01,0) [0|1] "" Vector__XXX
+ SG_ Speed_1 : 31|16@0+ (0.01,0) [0|1] "" Vector__XXX
+
+BO_ 144 ACCELERATION: 8 GRY
+ SG_ Long_acceleration : 7|16@0+ (1,0) [0|1] "" Vector__XXX
+ SG_ Lat_Acceleration : 23|16@0+ (1,0) [0|1] "" Vector__XXX
+ SG_ Long_Lat_Combined : 63|8@0+ (1,0) [0|1] "" Vector__XXX
+ SG_ Long_Lat_Combined_Smoothed : 39|16@0+ (1,0) [0|1] "" Vector__XXX
+
+BO_ 673 IMT: 8 GRY
+ SG_ IMT : 21|1@0+ (1,0) [0|1] "" Vector__XXX
+
+BO_ 922 START_STOP: 8 GRY
+ SG_ Start_Stop : 48|1@0+ (1,0) [0|1] "" Vector__XXX
+
+BO_ 1063 TRC_EXPERT: 8 GRY
+ SG_ Expert_Mode : 60|1@0+ (1,0) [0|1] "" Vector__XXX
+
+BO_ 608 STEER_TORQUE_SENSOR: 8 GRY
+ SG_ Steer_Override : 0|1@0+ (1,0) [0|1] "" Vector__XXX
+ SG_ Steer_Angle_Initializating : 3|1@0+ (1,0) [0|1] "" Vector__XXX
+ SG_ Steer_Torque_Driver : 15|16@0- (1,0) [0|1] "" Vector__XXX
+ SG_ Steer_Angle : 31|16@0- (0.0573,0) [0|1] "" Vector__XXX
+ SG_ Steer_Torque_EPS : 47|16@0- (1,0) [0|1] "" Vector__XXX
+ SG_ Checksum : 63|8@0+ (1,0) [0|1] "" Vector__XXX
+
+BO_ 15 SECOC_SYNCHRONIZATION: 8 GRY
+ SG_ Trip_Counter : 7|16@0+ (1,0) [0|1] "" Vector__XXX
+ SG_ Reset_Counter : 23|20@0+ (1,0) [0|1] "" Vector__XXX
+ SG_ Authenticator : 35|28@0+ (1,0) [0|1] "" Vector__XXX
+
+BO_ 1552 BODY_CONTROL_STATE_2: 8 GRY
+ SG_ UI_Speed : 23|8@0+ (1,0) [0|1] "" Vector__XXX
+ SG_ Units : 63|3@0+ (1,0) [0|1] "" Vector__XXX
+
+BO_ 374 PCM_CRUISE: 8 GRY
+ SG_ Cruise_Active : 5|1@0+ (1,0) [0|1] "" Vector__XXX
+ SG_ Cruise_State : 31|4@0+ (1,0) [0|1] "" Vector__XXX
+ SG_ Checksum : 63|8@0+ (1,0) [0|1] "" Vector__XXX
+
+BO_ 1557 SOME_TEMP: 8 GRY
+ SG_ Some_Temp : 48|9@0+ (0.25,-40) [0|1] "" Vector__XXX
+
+
+
+CM_ SG_ 278 Thorttle_Pos_Cruise "Synced_to_driver_when_CRUISE_inactive?";
+CM_ SG_ 865 Accel_Net "net_positive_acceleration_(gas)_applied_by_the_system_if_on_flat_ground,_may_not_include_creeping_force";
+CM_ SG_ 979 Fuel_Supply "amount_of_fuel_supplied_to_engine?";
+CM_ SG_ 1408 VIN_1_8 "VIN_Beginning";
+CM_ SG_ 1409 VIN_9_16 "VIN_Middle";
+CM_ SG_ 1410 VIN_17 "VIN_End";
+CM_ SG_ 944 Cabin_Temp "Likely_for_AC_control";
+CM_ SG_ 215 Speed_2 "Real?_GPS?";
+CM_ SG_ 215 Speed_1 "Dash?";
+CM_ SG_ 144 Long_Lat_Combined "MSB_to_small?";
+CM_ SG_ 608 Steer_Override "Set_when_driver_torque_exceeds_certain_value";
+CM_ SG_ 608 Steer_Torque_Driver "Driver_torque";
+CM_ SG_ 15 Trip_Counter "incremented_each_time_the_vehicle_is_started";
+CM_ SG_ 15 Reset_Counter "incremented_at_a_fixed_interval";
+BA_DEF_ BO_  "GenMsgBackgroundColor" STRING ;
+BA_DEF_ BO_  "GenMsgForegroundColor" STRING ;
+BA_DEF_ BO_  "matchingcriteria" INT 0 0;
+BA_DEF_ BO_  "filterlabeling" INT 0 0;
+BA_DEF_DEF_  "GenMsgBackgroundColor" "#ffffff";
+BA_DEF_DEF_  "GenMsgForegroundColor" "#000000";
+BA_DEF_DEF_  "matchingcriteria" 0;
+BA_DEF_DEF_  "filterlabeling" 0;
+BA_ "GenMsgForegroundColor" BO_ 1310 "#000000";
+BA_ "GenMsgForegroundColor" BO_ 1568 "#000000";
+VAL_ 252 Brake_Switch 0 "OFF" 1 "ON" ;
+VAL_ 257 Brake_Switch 0 "Brakes_OFF" 1 "Brakes_ON" ;
+VAL_ 865 Cruise_Enabled 0 "OFF" 1 "ON" ;
+VAL_ 865 Cancel_Button 0 "Released" 1 "Pressed" ;
+VAL_ 865 Minus_Set_Button 0 "Relesed" 1 "Pressed" ;
+VAL_ 865 Plus_Set_Button 0 "Released" 1 "Pressed" ;
+VAL_ 865 Brake_Switch 0 "OFF" 1 "ON" ;
+VAL_ 865 Clutch_Switch 0 "OFF" 1 "ON" ;
+VAL_ 865 Accel_Net 0 "OFF" 1 "ON" ;
+VAL_ 1310 AWD_Mode 0 "NORMAL" 2 "SPORT" 10 "TRACK" ;
+VAL_ 951 Traction_Control 0 "TRC_ON" 1 "TRC_OFF" ;
+VAL_ 1568 Handbrake 0 "OFF" 1 "ON" ;
+VAL_ 1568 Door_Left 0 "Closed" 1 "Open" ;
+VAL_ 1568 Door_Right 0 "Closed" 1 "Open" ;
+VAL_ 1568 Door_Rear 0 "Closed" 1 "Open" ;
+VAL_ 1553 Units 1 "km" 2 "miles" ;
+VAL_ 1556 Turn_Signal 1 "Left" 2 "Right" 3 "OFF" ;
+VAL_ 1556 Hazard 0 "OFF" 1 "ON" ;
+VAL_ 1592 Locks 0 "Locked" 1 "Unlocked" ;
+VAL_ 1570 Auto_High_Beam 0 "OFF" 1 "ON" ;
+VAL_ 1570 Daylight_Running_Lights 0 "OFF" 1 "ON" ;
+VAL_ 1570 Front_Fog_Lights 0 "OFF" 1 "ON" ;
+VAL_ 1570 High_Beam 0 "OFF" 1 "ON" ;
+VAL_ 1570 Low_Beam 0 "OFF" 1 "ON" ;
+VAL_ 1570 Parking_Lights 0 "OFF" 1 "ON" ;
+VAL_ 1570 Rear_Fog_Light 0 "OFF" 1 "ON" ;
+VAL_ 944 AC_Switch 0 "OFF" 1 "ON" ;
+VAL_ 1593 Bonnet 0 "Closed" 1 "Open" ;
+VAL_ 673 IMT 0 "OFF" 1 "ON" ;
+VAL_ 922 Start_Stop 0 "OFF" 1 "ON" ;
+VAL_ 1063 Expert_Mode 0 "OFF" 1 "ON" ;
+VAL_ 1552 Units 1 "km_(km/L)" 2 "km_(L/100km)" 3 "miles_(MPG_US)" 4 "miles_(MPG_Imperial" ;
+
